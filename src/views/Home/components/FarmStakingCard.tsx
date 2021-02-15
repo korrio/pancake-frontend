@@ -77,8 +77,8 @@ const FarmedStakingCard = () => {
               fullWidth
             >
               {pendingTx
-                ? TranslateString(548, 'Collecting CAKE')
-                : TranslateString(532, `Harvest all (${balancesWithValue.length})`)}
+                ? TranslateString(548, 'CAKE ที่เก็บได้')
+                : TranslateString(532, `เก็บเกี่ยวทั้งหมด (${balancesWithValue.length})`)}
             </Button>
           ) : (
             <UnlockButton fullWidth />

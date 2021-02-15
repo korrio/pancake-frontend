@@ -2,94 +2,47 @@ import { MenuEntry } from '@pancakeswap-libs/uikit'
 
 const config: MenuEntry[] = [
   {
-    label: 'Home',
+    label: 'หน้าหลัก',
     icon: 'HomeIcon',
     href: '/',
   },
   {
-    label: 'Trade',
+    label: 'เทรด',
     icon: 'TradeIcon',
     items: [
       {
-        label: 'Exchange',
-        href: 'https://exchange.pancakeswap.finance',
+        label: 'แลกเปลี่ยน',
+        href: 'http://pancakexx.web.app/#/swap',
       },
       {
-        label: 'Liquidity',
-        href: 'https://exchange.pancakeswap.finance/#/pool',
+        label: 'สภาพคล่อง',
+        href: 'http://pancakexx.web.app/#/pool',
       },
     ],
   },
   {
-    label: 'Farms',
+    label: 'ฟาร์ม',
     icon: 'FarmIcon',
     href: '/farms',
   },
   {
-    label: 'Pools',
+    label: 'พูล',
     icon: 'PoolIcon',
-    href: '/pools',
+    href: '/syrup',
   },
   {
-    label: 'Lottery',
+    label: 'ลอตเตอรี่',
     icon: 'TicketIcon',
     href: '/lottery',
   },
   {
-    label: 'NFT',
-    icon: 'NftIcon',
-    href: '/nft',
-  },
-  {
-    label: 'Teams & Profile',
-    icon: 'GroupsIcon',
-    calloutClass: 'rainbow',
-    items: [
-      {
-        label: 'Leaderboard',
-        href: '/teams',
-      },
-      {
-        label: 'Your Profile',
-        href: '/profile',
-      },
-    ],
-  },
-  {
-    label: 'Info',
-    icon: 'InfoIcon',
-    items: [
-      {
-        label: 'Overview',
-        href: 'https://pancakeswap.info',
-      },
-      {
-        label: 'Tokens',
-        href: 'https://pancakeswap.info/tokens',
-      },
-      {
-        label: 'Pairs',
-        href: 'https://pancakeswap.info/pairs',
-      },
-      {
-        label: 'Accounts',
-        href: 'https://pancakeswap.info/accounts',
-      },
-    ],
-  },
-  {
-    label: 'IFO',
-    icon: 'IfoIcon',
-    href: '/ifo',
-  },
-  {
-    label: 'More',
+    label: 'เพิ่มเติม',
     icon: 'MoreIcon',
     items: [
-      {
-        label: 'Voting',
-        href: 'https://voting.pancakeswap.finance',
-      },
+      // {
+      //   label: 'Voting',
+      //   href: 'https://voting.pancakeswap.finance',
+      // },
       {
         label: 'Github',
         href: 'https://github.com/pancakeswap',

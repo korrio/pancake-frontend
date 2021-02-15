@@ -81,12 +81,12 @@ const Farm: React.FC = () => {
       <Hero>
         <div>
           <Heading as="h1" size="xxl" mb="16px">
-            {TranslateString(282, 'SYRUP Pool')}
+            {TranslateString(282, 'ไซรับพูล')}
           </Heading>
           <ul>
-            <li>{TranslateString(580, 'Stake CAKE to earn new tokens.')}</li>
-            <li>{TranslateString(486, 'You can unstake at any time.')}</li>
-            <li>{TranslateString(406, 'Rewards are calculated per block.')}</li>
+            <li>{TranslateString(580, 'วางเงิน CAKE แล้วรับเหรียญ.')}</li>
+            <li>{TranslateString(486, 'ถอนต้นได้ตลอด.')}</li>
+            <li>{TranslateString(406, 'คำนวนรางวัลในแต่ละ block.')}</li>
           </ul>
         </div>
         <img src="/images/syrup.png" alt="SYRUP POOL icon" width={410} height={191} />

@@ -38,7 +38,7 @@ const Coming: React.FC = () => {
     <Card>
       <div style={{ padding: '24px' }}>
         <CardTitle>
-          {TranslateString(414, 'Your Project?')}{' '}
+          {TranslateString(414, 'เพิ่มโปรเจ็คของคุณ ?')}{' '}
           <span role="img" aria-label="eyes">
             👀
           </span>
@@ -54,7 +54,7 @@ const Coming: React.FC = () => {
           fullWidth
           mb="16px"
         >
-          {TranslateString(418, 'Apply Now')}
+          {TranslateString(418, 'สมัครเลย')}
         </Button>
         <DetailPlaceholder>
           <div style={{ flex: 1 }}>{TranslateString(736, 'APR')}:</div>
@@ -65,7 +65,7 @@ const Coming: React.FC = () => {
             <span role="img" aria-label="syrup">
               🥞{' '}
             </span>
-            {TranslateString(384, 'Your Stake')}:
+            {TranslateString(384, 'คุณได้รับ ')}:
           </div>
           <Value>??? CAKE</Value>
         </DetailPlaceholder>

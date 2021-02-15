@@ -88,16 +88,16 @@ const FarmedStakingCard = () => {
     <StyledLotteryCard>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {TranslateString(550, 'Your Lottery Winnings')}
+          {TranslateString(550, 'ล็อตเตอรรี่ที่ชนะ')}
         </Heading>
         <CardImage src="/images/ticket.svg" alt="cake logo" width={64} height={64} />
         <Block>
           <CakeWinnings />
-          <Label>{TranslateString(552, 'CAKE to Collect')}</Label>
+          <Label>{TranslateString(552, 'เก็บ CAKE')}</Label>
         </Block>
         <Block>
           <LotteryJackpot />
-          <Label>{TranslateString(554, 'Total jackpot this round')}</Label>
+          <Label>{TranslateString(554, 'แจ็คพ๊อตสำหรับรอบนี้')}</Label>
         </Block>
         <Actions>
           <Button

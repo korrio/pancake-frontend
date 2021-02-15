@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { StringTranslations } from '@crowdin/crowdin-api-client'
 import { TranslationsContext } from 'contexts/Localisation/translationsContext'
-import { allLanguages, EN } from 'config/localisation/languageCodes'
+import { allLanguages, TH } from 'config/localisation/languageCodes'
 
 const CACHE_KEY = 'pancakeSwapLanguage'
 
@@ -18,9 +18,9 @@ export interface LanguageState {
 }
 
 const LanguageContext = React.createContext({
-  selectedLanguage: EN,
+  selectedLanguage: TH,
   setSelectedLanguage: () => undefined,
-  translatedLanguage: EN,
+  translatedLanguage: TH,
   setTranslatedLanguage: () => undefined,
 } as LanguageState)
 
@@ -35,8 +35,8 @@ const fetchTranslationsForSelectedLanguage = (selectedLanguage) => {
 }
 
 const LanguageContextProvider = ({ children }) => {
-  const [selectedLanguage, setSelectedLanguage] = useState<any>(EN)
-  const [translatedLanguage, setTranslatedLanguage] = useState<any>(EN)
+  const [selectedLanguage, setSelectedLanguage] = useState<any>(TH)
+  const [translatedLanguage, setTranslatedLanguage] = useState<any>(TH)
   const [translations, setTranslations] = useState<Array<any>>([])
 
   const getStoredLang = (storedLangCode: string) => {
@@ -49,9 +49,9 @@ const LanguageContextProvider = ({ children }) => {
     const storedLangCode = localStorage.getItem(CACHE_KEY)
     if (storedLangCode) {
       const storedLang = getStoredLang(storedLangCode)
-      setSelectedLanguage(storedLang)
+      setSelectedLanguage(TH)
     } else {
-      setSelectedLanguage(EN)
+      setSelectedLanguage(TH)
     }
   }, [])
 
@@ -60,15 +60,14 @@ const LanguageContextProvider = ({ children }) => {
       fetchTranslationsForSelectedLanguage(selectedLanguage)
         .then((translationApiResponse) => {
           if (translationApiResponse.data.length < 1) {
-            setTranslations([])
+            setTranslations(['error'])
           } else {
             setTranslations(translationApiResponse.data)
           }
         })
         .then(() => setTranslatedLanguage(selectedLanguage))
-        .catch((e) => {
-          setTranslations([])
-          console.error('Error while loading translations', e)
+        .catch(() => {
+          setTranslations(['error'])
         })
     }
   }, [selectedLanguage, setTranslations])

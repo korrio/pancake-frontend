@@ -33,18 +33,18 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({ onConfirm, onDismiss, max
   }, [fullBalance, setVal])
 
   return (
-    <Modal title={TranslateString(1126, 'Unstake LP tokens')} onDismiss={onDismiss}>
+    <Modal title={TranslateString(1126, 'คืนเงินมัดจำ LP tokens')} onDismiss={onDismiss}>
       <ModalInput
         onSelectMax={handleSelectMax}
         onChange={handleChange}
         value={val}
         max={fullBalance}
         symbol={tokenName}
-        inputTitle={TranslateString(588, 'Unstake')}
+        inputTitle={TranslateString(588, 'คืนเงินมัดจำ')}
       />
       <ModalActions>
         <Button variant="secondary" onClick={onDismiss} fullWidth>
-          {TranslateString(462, 'Cancel')}
+          {TranslateString(462, 'ยกเลิก')}
         </Button>
         <Button
           disabled={pendingTx}
@@ -56,7 +56,7 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({ onConfirm, onDismiss, max
           }}
           fullWidth
         >
-          {pendingTx ? TranslateString(488, 'Pending Confirmation') : TranslateString(464, 'Confirm')}
+          {pendingTx ? TranslateString(488, 'กำลังรอการคอนเฟิร์ม') : TranslateString(464, 'Confirm')}
         </Button>
       </ModalActions>
     </Modal>

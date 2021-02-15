@@ -17,7 +17,7 @@ const CakeHarvestBalance = () => {
   if (!account) {
     return (
       <Text color="textDisabled" style={{ lineHeight: '60px' }}>
-        {TranslateString(298, 'Locked')}
+        {TranslateString(298, 'ล็อค')}
       </Text>
     )
   }
