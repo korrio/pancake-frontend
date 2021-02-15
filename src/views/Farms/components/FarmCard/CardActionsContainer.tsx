@@ -63,7 +63,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account, 
       />
     ) : (
       <Button mt="8px" fullWidth disabled={requestedApproval} onClick={handleApprove}>
-        {TranslateString(758, 'Approve Contract')}
+        {TranslateString(758, 'อนุมัติ Contract')}
       </Button>
     )
   }
@@ -76,7 +76,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account, 
           CAKE
         </Text>
         <Text bold textTransform="uppercase" color="textSubtle" fontSize="12px">
-          {TranslateString(1072, 'Earned')}
+          {TranslateString(1072, 'รายได้')}
         </Text>
       </Flex>
       <HarvestAction earnings={earnings} pid={pid} />
@@ -85,7 +85,7 @@ const CardActions: React.FC<FarmCardActionsProps> = ({ farm, ethereum, account, 
           {lpName}
         </Text>
         <Text bold textTransform="uppercase" color="textSubtle" fontSize="12px">
-          {TranslateString(1074, 'Staked')}
+          {TranslateString(1074, 'วางมัดจำแล้ว')}
         </Text>
       </Flex>
       {!account ? <UnlockButton mt="8px" fullWidth /> : renderApprovalOrStakeButton()}

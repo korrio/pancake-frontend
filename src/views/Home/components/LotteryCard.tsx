@@ -71,13 +71,13 @@ const FarmedStakingCard = () => {
     if (!allowance.toNumber()) {
       return (
         <Button fullWidth disabled={requestedApproval} onClick={handleApprove}>
-          {TranslateString(494, 'Approve CAKE')}
+          {TranslateString(494, 'อนุมัติ CAKE')}
         </Button>
       )
     }
     return (
       <Button id="dashboard-buy-tickets" variant="secondary" onClick={onPresentBuy} disabled={lotteryHasDrawn}>
-        {TranslateString(558, 'Buy Tickets')}
+        {TranslateString(558, 'ซื้อตั๋วล๊อตเตอรี่')}
       </Button>
     )
   }
@@ -106,7 +106,7 @@ const FarmedStakingCard = () => {
             onClick={handleClaim}
             style={{ marginRight: '8px' }}
           >
-            {TranslateString(556, 'Collect Winnings')}
+            {TranslateString(556, 'เก็บเงินรางวัล')}
           </Button>
           {renderLotteryTicketButtonBuyOrApprove()}
         </Actions>

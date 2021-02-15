@@ -29,12 +29,12 @@ const EarnAssetCard = () => {
     <StyledFarmStakingCard>
       <CardBody>
         <Heading color="contrast" size="lg">
-          Earn
+          สร้างรายได้สูงถึง
         </Heading>
         <CardMidContent color="invertedContrast">{assets}</CardMidContent>
         <Flex justifyContent="space-between">
           <Heading color="contrast" size="lg">
-            in Pools
+            ในพูล
           </Heading>
           <NavLink exact activeClassName="active" to="/syrup" id="pool-cta">
             <ArrowForwardIcon mt={30} color="primary" />

@@ -39,10 +39,10 @@ const TicketCard: React.FC = () => {
       return (
         <>
           <Button fullWidth disabled>
-            {TranslateString(432, 'View your tickets')}
+            {TranslateString(432, 'ดูตั๋วล๊อตเตอรี่')}
           </Button>
           <Button fullWidth disabled={requestedApproval} onClick={handleApprove}>
-            {TranslateString(494, 'Approve CAKE')}
+            {TranslateString(494, 'อนุมัติ CAKE')}
           </Button>
         </>
       )
@@ -56,10 +56,10 @@ const TicketCard: React.FC = () => {
           variant="secondary"
           onClick={onPresentMyTickets}
         >
-          {TranslateString(432, 'View your tickets')}
+          {TranslateString(432, 'ดูตั๋วล๊อตเตอรี่')}
         </Button>
         <Button id="lottery-buy-start" fullWidth onClick={onPresentBuy}>
-          {TranslateString(430, 'Buy ticket')}
+          {TranslateString(430, 'ซื้อตั๋วล๊อตเตอรี่')}
         </Button>
       </>
     )
@@ -68,7 +68,7 @@ const TicketCard: React.FC = () => {
   return (
     <CardActions>
       {lotteryHasDrawn ? (
-        <Button disabled> {TranslateString(874, 'On sale soon')}</Button>
+        <Button disabled> {TranslateString(874, 'ลดราคา เร็วๆนี้')}</Button>
       ) : (
         renderLotteryTicketButtons()
       )}

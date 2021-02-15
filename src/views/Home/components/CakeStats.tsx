@@ -30,7 +30,7 @@ const CakeStats = () => {
     <StyledCakeStats>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {TranslateString(534, 'Cake Stats')}
+          {TranslateString(534, 'สถิติ CAKE')}
         </Heading>
         <Row>
           <Text fontSize="14px">{TranslateString(536, 'CAKE Supply ทั้งหมด')}</Text>
@@ -41,7 +41,7 @@ const CakeStats = () => {
           <CardValue fontSize="14px" value={getBalanceNumber(burnedBalance)} />
         </Row>
         <Row>
-          <Text fontSize="14px">{TranslateString(540, 'อัตรา CAKE/block')}</Text>
+          <Text fontSize="14px">{TranslateString(540, 'อัตราเกิด CAKE ต่อ block')}</Text>
           <CardValue fontSize="14px" decimals={0} value={25} />
         </Row>
       </CardBody>
