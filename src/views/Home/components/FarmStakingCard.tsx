@@ -57,16 +57,16 @@ const FarmedStakingCard = () => {
     <StyledFarmStakingCard>
       <CardBody>
         <Heading size="xl" mb="24px">
-          {TranslateString(542, 'Farms & Staking')}
+          {TranslateString(542, 'รายได้จากการฟาร์ม')}
         </Heading>
-        <CardImage src="/images/cake.svg" alt="cake logo" width={64} height={64} />
+        <CardImage src="/images/logo.png" alt="cake logo" width={64} height={64} />
         <Block>
           <CakeHarvestBalance />
-          <Label>{TranslateString(544, 'CAKE to Harvest')}</Label>
+          <Label>{TranslateString(544, 'CUP ที่เก็บได้')}</Label>
         </Block>
         <Block>
           <CakeWalletBalance />
-          <Label>{TranslateString(546, 'CAKE in Wallet')}</Label>
+          <Label>{TranslateString(546, 'CUP ในกระเป๋า')}</Label>
         </Block>
         <Actions>
           {account ? (
@@ -77,7 +77,7 @@ const FarmedStakingCard = () => {
               fullWidth
             >
               {pendingTx
-                ? TranslateString(548, 'CAKE ที่เก็บได้')
+                ? TranslateString(548, 'CUP ที่เก็บได้')
                 : TranslateString(532, `เก็บเกี่ยวทั้งหมด (${balancesWithValue.length})`)}
             </Button>
           ) : (

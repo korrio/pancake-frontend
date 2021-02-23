@@ -67,14 +67,14 @@ const TicketCard: React.FC<CardProps> = ({ isSecondCard = false }) => {
           {lotteryHasDrawn ? (
             <TicketCountWrapper>
               <Text fontSize="14px" color="textSubtle">
-                {TranslateString(870, 'Until ticket sale:')}
+                {TranslateString(870, 'เปิดขายในออีก:')}
               </Text>
               <Heading size="lg">{timeUntilTicketSale}</Heading>
             </TicketCountWrapper>
           ) : (
             <TicketCountWrapper>
               <Text fontSize="14px" color="textSubtle">
-                {TranslateString(724, 'Your tickets for this round')}
+                {TranslateString(724, 'ดูตั๋วล๊อตเตอรี่ของคุณในรอบนี้')}
               </Text>
               <Heading size="lg">{ticketsLength}</Heading>
             </TicketCountWrapper>

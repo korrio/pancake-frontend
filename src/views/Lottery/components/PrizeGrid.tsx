@@ -53,19 +53,19 @@ const PrizeGrid: React.FC<PrizeGridProps> = ({
     <Grid pastDraw={pastDraw}>
       <GridItem>
         <Text fontSize="14px" color="textSubtle">
-          {TranslateString(756, 'No. Matched')}
+          {TranslateString(756, 'รางวัลเลขท้าย')}
         </Text>
       </GridItem>
       {pastDraw && (
         <PastDrawGridItem>
           <RightAlignedText fontSize="14px" color="textSubtle">
-            {TranslateString(754, 'Winners')}
+            {TranslateString(754, 'จำนวนผู้ชนะ')}
           </RightAlignedText>
         </PastDrawGridItem>
       )}
       <GridItem>
         <RightAlignedText fontSize="14px" color="textSubtle">
-          {TranslateString(752, 'Prize Pot')}
+          {TranslateString(752, 'รางวัล')}
         </RightAlignedText>
       </GridItem>
       {/* 4 matches row */}
@@ -118,7 +118,7 @@ const PrizeGrid: React.FC<PrizeGridProps> = ({
       </GridItem>
       {/* Burn row */}
       <GridItem marginBottom="0">
-        <Text>{TranslateString(999, `${pastDraw ? 'Burned' : 'To burn'}`)}:</Text>
+        <Text>{TranslateString(999, `${pastDraw ? 'Burned แล้ว' : 'กำลังจะ burn'}`)}:</Text>
       </GridItem>
       {pastDraw ? (
         <>

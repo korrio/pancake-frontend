@@ -45,17 +45,18 @@ const LotteryProgress = () => {
     <ProgressWrapper>
       <Progress primaryStep={getLotteryDrawStep(currentMillis)} secondaryStep={getTicketSaleStep()} showProgressBunny />
       <TopTextWrapper>
+        <Text fontSize="20px" bold color="invertedContrast">
+          {lotteryHasDrawn ? TranslateString(0, 'ออกรางวัลอีกครั้งใน ') : TranslateString(0, 'จนกว่าจะถึงเวลาออกรางวัล')}
+        </Text>
         <StyledPrimaryText fontSize="20px" bold color="contrast">
           {lotteryHasDrawn ? timeUntilTicketSale : timeUntilLotteryDraw}
         </StyledPrimaryText>
-        <Text fontSize="20px" bold color="invertedContrast">
-          {lotteryHasDrawn ? TranslateString(0, 'Until ticket sale') : TranslateString(0, 'Until lottery draw')}
-        </Text>
+        
       </TopTextWrapper>
       {lotteryHasDrawn && (
         <BottomTextWrapper>
           <Text color="invertedContrast">
-            {timeUntilLotteryDraw} {TranslateString(0, 'Until lottery draw')}
+            {timeUntilLotteryDraw} {TranslateString(0, 'จนกว่าจะถึงเวลาออกรางวัล')}
           </Text>
         </BottomTextWrapper>
       )}

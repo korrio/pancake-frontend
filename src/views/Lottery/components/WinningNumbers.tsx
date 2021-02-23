@@ -24,8 +24,8 @@ const WinningNumbers: React.FC = () => {
             <StyledCardHeader>
               <Title>
                 {account && lotteryHasDrawn
-                  ? `🥳${TranslateString(570, 'Winning Numbers This Round')}🥳`
-                  : TranslateString(572, 'Latest Winning Numbers')}
+                  ? `🥳${TranslateString(570, ' เลขที่ออก ')}🥳`
+                  : TranslateString(572, 'เลขที่ออกงวดที่แล้ว')}
               </Title>
               <br />
             </StyledCardHeader>
@@ -83,32 +83,32 @@ const WinningNumbers: React.FC = () => {
             </RabbitRowSmall>
             <Column>
               <RowNoPadding>
-                <CenteredTextWithPadding>{TranslateString(442, 'Tickets matching 4 numbers:')}</CenteredTextWithPadding>
+                <CenteredTextWithPadding>{TranslateString(442, 'จำนวนผู้ชนะเลข 4 ตัว:')}</CenteredTextWithPadding>
                 <CenteredTextWithPadding>
                   <strong>{MatchedNumber4}</strong>
                 </CenteredTextWithPadding>
               </RowNoPadding>
               <RowNoPadding>
-                <CenteredTextWithPadding>{TranslateString(444, 'Tickets matching 3 numbers:')}</CenteredTextWithPadding>
+                <CenteredTextWithPadding>{TranslateString(444, 'จำนวนผู้ชนะเลข 3 ตัว:')}</CenteredTextWithPadding>
                 <CenteredTextWithPadding>
                   <strong>{MatchedNumber3}</strong>
                 </CenteredTextWithPadding>
               </RowNoPadding>
               <RowNoPadding>
-                <CenteredTextWithPadding>{TranslateString(446, 'Tickets matching 2 numbers:')}</CenteredTextWithPadding>
+                <CenteredTextWithPadding>{TranslateString(446, 'จำนวนผู้ชนะเลข 2 ตัว:')}</CenteredTextWithPadding>
                 <CenteredTextWithPadding>
                   <strong>{MatchedNumber2}</strong>
                 </CenteredTextWithPadding>
               </RowNoPadding>
               <RowNoPadding>
-                <CenteredTextWithPadding>{TranslateString(999, 'Tickets matching 1 numbers:')}</CenteredTextWithPadding>
+                <CenteredTextWithPadding>{TranslateString(999, 'จำนวนผู้ชนะเลข 1 ตัว:')}</CenteredTextWithPadding>
                 <CenteredTextWithPadding>
                   <strong>{MatchedNumber1}</strong>
                 </CenteredTextWithPadding>
               </RowNoPadding>
             </Column>
             <Link href="https://api.pancakeswap.com/api/lottery?page=0&pageSize=25" target="_blank">
-              {TranslateString(448, 'Export recent winning numbers')}
+              {TranslateString(448, 'Export เลขที่ออกงวดก่อนหน้าทุกงวดทั้งหมด')}
             </Link>
           </StyledCardContentInner>
         </CardBody>
