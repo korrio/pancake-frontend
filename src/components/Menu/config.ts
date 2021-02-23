@@ -2,41 +2,41 @@ import { MenuEntry } from '@pancakeswap-libs/uikit'
 
 const config: MenuEntry[] = [
   {
-    label: 'หน้าหลัก',
+    label: 'หน้าหลัก / Home',
     icon: 'HomeIcon',
     href: '/',
   },
   {
-    label: 'เทรด',
+    label: 'เทรด / Trade',
     icon: 'TradeIcon',
     items: [
       {
-        label: 'แลกเปลี่ยน',
+        label: 'แลกเปลี่ยน / Exchange',
         href: 'http://pancakexx.web.app/#/swap',
       },
       {
-        label: 'สภาพคล่อง',
+        label: 'สภาพคล่อง / Liquidity',
         href: 'http://pancakexx.web.app/#/pool',
       },
     ],
   },
   {
-    label: 'ฟาร์ม',
+    label: 'ฟาร์ม / Farms',
     icon: 'FarmIcon',
     href: '/farms',
   },
+  // {
+  //   label: 'พูล',
+  //   icon: 'PoolIcon',
+  //   href: '/syrup',
+  // },
   {
-    label: 'พูล',
-    icon: 'PoolIcon',
-    href: '/syrup',
-  },
-  {
-    label: 'ลอตเตอรี่',
+    label: 'ลอตเตอรี่ / Lottery',
     icon: 'TicketIcon',
     href: '/lottery',
   },
   {
-    label: 'เพิ่มเติม',
+    label: 'เพิ่มเติม / More ',
     icon: 'MoreIcon',
     items: [
       // {

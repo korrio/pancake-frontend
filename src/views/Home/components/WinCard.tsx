@@ -24,12 +24,12 @@ const WinCard = () => {
     <StyledFarmStakingCard>
       <CardBody>
         <Heading color="contrast" size="lg">
-          โอกาสรับเงินรางวัลสูงถึง
+          โอกาสรับเงินสูงถึง
         </Heading>
         <CardMidContent color="#7645d9">${lotteryPrize}</CardMidContent>
         <Flex justifyContent="space-between">
           <Heading color="contrast" size="lg">
-            
+            ในรางวัลล๊อตเตอรรี่
           </Heading>
           <NavLink exact activeClassName="active" to="/lottery" id="lottery-pot-cta">
             <ArrowForwardIcon mt={30} color="primary" />

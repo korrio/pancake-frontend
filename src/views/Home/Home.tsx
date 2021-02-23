@@ -4,6 +4,7 @@ import { Heading, Text, BaseLayout } from '@pancakeswap-libs/uikit'
 import useI18n from 'hooks/useI18n'
 import Page from 'components/layout/Page'
 import FarmStakingCard from 'views/Home/components/FarmStakingCard'
+import TwitterCard from 'views/Home/components/TwitterCard'
 import LotteryCard from 'views/Home/components/LotteryCard'
 import CakeStats from 'views/Home/components/CakeStats'
 import TotalValueLockedCard from 'views/Home/components/TotalValueLockedCard'
@@ -83,7 +84,7 @@ const Home: React.FC = () => {
     <Page>
       <Hero>
         <Heading as="h1" size="xl" mb="24px" color="secondary">
-          {TranslateString(576, 'แพนเค้กสว๊อพ')}
+          {TranslateString(576, 'คัพเค้กสว๊อพ')}
         </Heading>
         <Text>{TranslateString(578, 'AMM อันดับ 1 และฟาร์มผลผลิตบน Binance Smart Chain.')}</Text>
       </Hero>
@@ -92,13 +93,12 @@ const Home: React.FC = () => {
           <FarmStakingCard />
           <LotteryCard />
         </Cards>
-        <CTACards>
-          <EarnAPYCard />
-          <EarnAssetCard />
-          <WinCard />
-        </CTACards>
         <Cards>
+          <TwitterCard />
           <CakeStats />
+        </Cards>
+        <Cards>
+          
           <TotalValueLockedCard />
         </Cards>
       </div>
